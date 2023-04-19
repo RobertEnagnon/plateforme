@@ -1,0 +1,30 @@
+
+
+         
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.navbar{
+    justify-content: center;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px ;
+  }
+.navbar .link:hover,.compte .link:hover{
+    color: rgb(0, 255, 157);
+    transition: all ease-in 0.3s;
+    border-bottom: 1px solid whitesmoke;
+    padding-top: 5px;
+}
+.compte{
+    justify-content: end;
+}
+
