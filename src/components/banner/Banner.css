@@ -11,7 +11,7 @@
     background-size: contain;
     width: 500px;
     float: right;
-    height: 68vh;
+    height: 78vh;
     /*padding-top: 100px;*/
     transform: matrix(-1,0,0,1,0,0);
 }
@@ -21,11 +21,11 @@
 .principal{
     word-wrap: break-word;
     color: rgb(253, 243, 243);
-    font-size: 28px;
+    font-size: 20px;
 }
 .trainingButton{ 
     background: #108643;
-    font-size: 20px;
+    /* font-size: 20px; */
     background: linear-gradient(90deg, #108643 0%, #108643 6%, rgba(9,121,59,1) 100%); 
     word-wrap: none;
 }

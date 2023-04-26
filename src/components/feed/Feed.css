@@ -1,0 +1,23 @@
+.feed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0;
+}
+.feed .top{
+    max-width: 90%;
+    text-align: center;
+}
+.top .title span:first-of-type{
+    color:#271033 !important;
+}
+.top .title span:last-of-type{
+    color: #108643 !important;
+}
+.top .paragraph{
+    padding: 5px 20px;
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    color: grey;
+}

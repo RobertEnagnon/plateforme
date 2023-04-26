@@ -29,6 +29,7 @@ const Search = styled('div')(({ theme }) => ({
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(1),
       width: 'auto',
+      overflow:'hidden'
     },
   }));
   
@@ -40,6 +41,7 @@ const Search = styled('div')(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    overflow:"hidden"
   }));
   
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -51,9 +53,10 @@ const Search = styled('div')(({ theme }) => ({
       transition: theme.transitions.create('width'),
       width: '100%',
       [theme.breakpoints.up('sm')]: {
-        width: '15ch',
+        width: '12ch',
         '&:focus': {
-          width: '20ch',
+          width: '18ch',
+          overflow:"hidden"
         },
       },
     },
@@ -62,7 +65,7 @@ const Search = styled('div')(({ theme }) => ({
 const Topbar = () => {
   return (
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static"  sx={{backgroundColor: `#108643`}}>
+          <AppBar position="sticky"  sx={{backgroundColor: `#108643`}}>
               <Toolbar className='toolbar'>
                   <Link
                       to='/'
@@ -91,8 +94,8 @@ const Topbar = () => {
                   </Stack>
                   
                   <Stack direction='row' className="compte" divider={<Divider orientation="vertical" flexItem light={true}
-                     sx={{borderColor: 'white'}}  />} spacing={1}  >
-                    <Search>
+                     sx={{borderColor: 'white'}}  />}>
+                    <Search sx={{height: '44px', overflow:'hidden'}}>
                         <SearchIconWrapper>
                         <SearchIcon />
                         </SearchIconWrapper>
@@ -102,10 +105,10 @@ const Topbar = () => {
                             />
                     </Search>
                     <Link to="/"  className='link'>
-                      <Stack direction='row' spacing={1}><PersonAddAlt1Icon/><span>S'inscrire</span></Stack>
+                      <Stack direction='row' fontSize={16} sx={{whiteSpace: "noWrap"}} spacing={1}><PersonAddAlt1Icon/><span>S'inscrire</span></Stack>
                     </Link>
                     <Link to="/" className='link'>
-                      <Stack direction='row' spacing={1}><LoginIcon/><span>Se connecter</span></Stack>
+                      <Stack direction='row' fontSize={16} sx={{whiteSpace: "noWrap"}} spacing={1}><LoginIcon/><span>Se connecter</span></Stack>
                     </Link>
                   </Stack>
               </Toolbar>
