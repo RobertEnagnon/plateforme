@@ -4,17 +4,7 @@
     background: #36904A;
     background: linear-gradient(to bottom, #36904A 1%, #85FC8A 84%);
 }
-.banner .right{
-    background-image: url("../../assets//images/banner.png") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 500px;
-    float: right;
-    height: 78vh;
-    /*padding-top: 100px;*/
-    transform: matrix(-1,0,0,1,0,0);
-}
+
 .ronasdev{
     color: rgb(0, 255, 157);
 }
@@ -23,16 +13,15 @@
     color: rgb(253, 243, 243);
     font-size: 20px;
 }
-.trainingButton{ 
-    background: #108643;
-    /* font-size: 20px; */
-    background: linear-gradient(90deg, #108643 0%, #108643 6%, rgba(9,121,59,1) 100%); 
-    word-wrap: none;
-}
-.trainingButton:hover{
-    letter-spacing: 1px;
-    transition: ease-in all 0.3s;
-    color: #108643; 
-    background: rgb(242,237,237);
-    background: linear-gradient(90deg, rgba(242,237,237,1) 0%, rgba(223,221,221,1) 6%, rgba(180,237,206,1) 100%);  
+
+
+.banner .right{
+    background-image: url("../../assets//images/banner.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    float: right;
+    min-height: 78vh;
+    transform: matrix(-1,0,0,1,0,0);
 }
