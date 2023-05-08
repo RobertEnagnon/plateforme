@@ -1,0 +1,14 @@
+.tutorielFeed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0;
+    width: 100%;
+}
+.title{
+    text-align: center;
+}
+.tutorielFeed .title span:last-of-type{
+    color: #108643 !important;
+   
+}

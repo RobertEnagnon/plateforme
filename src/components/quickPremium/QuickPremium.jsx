@@ -28,8 +28,8 @@ const QuickPremium = () => {
             <Box>
                 <Typography variant='h4'>Devenir premium</Typography>
                 <p>Devenir premium sur Ronasdev, c'est soutenir la création de nouveaux contenus 
-                    chaque semaine et accéder à du contenu exclusif pour apprendre et 
-                    s'améliorer (comme le téléchargement des vidéos et des sources).
+                    chaque semaine, rejoindre nos canaux de partages privés et accéder à du contenu exclusif pour apprendre et 
+                    s'améliorer (comme le téléchargement des vidéos et des sources, accès à des contenus exclusifs et aux codes de nos projets).
                 </p>
             </Box>
             <Stack direction='column' > 

@@ -1,8 +1,9 @@
 :root{
   --topbarColor: #108643;
   --bgolor:rgb(0, 255, 157);
-  --buttonHover: background: linear-gradient(90deg, rgba(242,237,237,1) 0%, rgba(223,221,221,1) 6%, rgba(180,237,206,1) 100%);
-  --textColor: #271033
+  --buttonHover: linear-gradient(90deg, rgba(242,237,237,1) 0%, rgba(223,221,221,1) 6%, rgba(180,237,206,1) 100%);
+  --textColor: #271033;
+  --paragraphColor: grey;
 }
 body {
   margin: 0;
@@ -30,6 +31,7 @@ h4{
   word-wrap: none;
   font-size: 20px !important;
   transition: ease-in all 0.3s;
+  white-space: nowrap;
 }
 
 .btnFirst:hover{

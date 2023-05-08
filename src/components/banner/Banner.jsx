@@ -9,6 +9,7 @@ const TutoButton = styled(Button)({
     color: '#0F2027',
     fontSize: "20px",
     padding:"15px 20px",
+    whiteSpace:'nowrap',
     transition:"ease-in all 0.3s",
     '&:hover':{
         borderColor: '#f9f9f9',
