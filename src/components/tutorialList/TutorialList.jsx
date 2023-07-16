@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Box, Grid,Stack,Typography } from '@mui/material';
 import TutorialItem from '../tutorialItem/TutorialItem';
 import SearchBar from '../searchBar/SearchBar';
@@ -13,95 +13,92 @@ const TutorialList = () => {
 
   // Exemple de données de tutoriels
  
+  const data = useMemo(() => [
+    {
+      id: 1,
+      title: 'Introduction à React',
+      category: 'Front-end',
+      level: 'Débutant',
+      duration: '1 heure',
+      imageUrl: 'https://cdn.mindmajix.com/blog/images/introduction-to-reactjs-071119.png',
+    },
+    {
+      id: 2,
+      title: 'API REST avec Node.js',
+      category: 'Back-end',
+      level: 'Intermédiaire',
+      duration: '2 heures',
+      imageUrl: 'https://welovedevs.com/wp-content/uploads/2022/08/node-js-api.png',
+    },
+    {
+      id: 3,
+      title: 'Apprendre PHP & MySQL',
+      category: 'Back-end',
+      level: 'Débutant',
+      duration: '4 heures',
+      imageUrl: 'https://www.cours-exercices-pdf.com/images/php-mysql.jpg',
+    },
+    {
+      id: 4,
+      title: 'Les évènements en Laravel',
+      category: 'Back-end',
+      level: 'Expert',
+      duration: '1 heures',
+      imageUrl: 'https://grafikart.fr/uploads/attachments/2023/laravel-event-642aac19e016d620891814.jpg',
+    },
+    {
+      id: 5,
+      title: 'Créer une application android avec Java',
+      category: 'Back-end',
+      level: 'Intermédiaire',
+      duration: '2 heures',
+      imageUrl: 'https://img-b.udemycdn.com/course/750x422/4150774_db89_5.jpg',
+    },
+    {
+      id: 6,
+      title: 'Flutter Revolution',
+      category: 'Full-Stack',
+      level: 'Intermédiaire',
+      duration: '2 heures',
+      imageUrl: 'https://formation.drissas.com/hosted/images/72/6fc8888c0640ce99c7a53a17cdd0cf/flutter-revolution-pack-9.png',
+    },
+    {
+      id: 7,
+      title: 'Application Révolutive avec Angular',
+      category: 'Front-end',
+      level: 'Expert',
+      duration: '4 heures',
+      imageUrl: 'https://www.moveoapps.com/blog/wp-content/uploads/2021/05/popular-apps-built-with-angular.png',
+    },
+    {
+      id: 8,
+      title: 'Apprendre à créer un logiciel avec Java Swing',
+      category: 'Full-stack',
+      level: 'Intermédiaire',
+      duration: '3 heures',
+      imageUrl: 'https://www.testingdocs.com/wp-content/uploads/Java-Swing-API.png',
+    },
+    {
+      id: 9,
+      title: 'Découvre le FullStack avec Python',
+      category: 'Full-stack',
+      level: 'Intermédiaire',
+      duration: '11 heures',
+      imageUrl: 'https://www.interviewbit.com/blog/wp-content/uploads/2021/12/Applications-of-Python.png',
+    },
+    {
+      id: 10,
+      title: 'Apprendre PHP & MySQL',
+      category: 'Back-end',
+      level: 'Débutant',
+      duration: '4 heures',
+      imageUrl: 'https://www.cours-exercices-pdf.com/images/php-mysql.jpg',
+    },
+  ], [])
     
   useEffect(() => {
-
-    const data = [
-      {
-        id: 1,
-        title: 'Introduction à React',
-        category: 'Front-end',
-        level: 'Débutant',
-        duration: '1 heure',
-        imageUrl: 'https://cdn.mindmajix.com/blog/images/introduction-to-reactjs-071119.png',
-      },
-      {
-        id: 2,
-        title: 'API REST avec Node.js',
-        category: 'Back-end',
-        level: 'Intermédiaire',
-        duration: '2 heures',
-        imageUrl: 'https://welovedevs.com/wp-content/uploads/2022/08/node-js-api.png',
-      },
-      {
-        id: 3,
-        title: 'Apprendre PHP & MySQL',
-        category: 'Back-end',
-        level: 'Débutant',
-        duration: '4 heures',
-        imageUrl: 'https://www.cours-exercices-pdf.com/images/php-mysql.jpg',
-      },
-      {
-        id: 4,
-        title: 'Les évènements en Laravel',
-        category: 'Back-end',
-        level: 'Expert',
-        duration: '1 heures',
-        imageUrl: 'https://grafikart.fr/uploads/attachments/2023/laravel-event-642aac19e016d620891814.jpg',
-      },
-      {
-        id: 5,
-        title: 'Créer une application android avec Java',
-        category: 'Back-end',
-        level: 'Intermédiaire',
-        duration: '2 heures',
-        imageUrl: 'https://img-b.udemycdn.com/course/750x422/4150774_db89_5.jpg',
-      },
-      {
-        id: 6,
-        title: 'Flutter Revolution',
-        category: 'Full-Stack',
-        level: 'Intermédiaire',
-        duration: '2 heures',
-        imageUrl: 'https://formation.drissas.com/hosted/images/72/6fc8888c0640ce99c7a53a17cdd0cf/flutter-revolution-pack-9.png',
-      },
-      {
-        id: 7,
-        title: 'Application Révolutive avec Angular',
-        category: 'Front-end',
-        level: 'Expert',
-        duration: '4 heures',
-        imageUrl: 'https://www.moveoapps.com/blog/wp-content/uploads/2021/05/popular-apps-built-with-angular.png',
-      },
-      {
-        id: 8,
-        title: 'Apprendre à créer un logiciel avec Java Swing',
-        category: 'Full-stack',
-        level: 'Intermédiaire',
-        duration: '3 heures',
-        imageUrl: 'https://www.testingdocs.com/wp-content/uploads/Java-Swing-API.png',
-      },
-      {
-        id: 9,
-        title: 'Découvre le FullStack avec Python',
-        category: 'Full-stack',
-        level: 'Intermédiaire',
-        duration: '11 heures',
-        imageUrl: 'https://www.interviewbit.com/blog/wp-content/uploads/2021/12/Applications-of-Python.png',
-      },
-      {
-        id: 10,
-        title: 'Apprendre PHP & MySQL',
-        category: 'Back-end',
-        level: 'Débutant',
-        duration: '4 heures',
-        imageUrl: 'https://www.cours-exercices-pdf.com/images/php-mysql.jpg',
-      },
-    ];
-
-
     setTutorials([...data]); 
-  },[])
+  },[data])
   
   const levels = ['Débutant', 'Intermédiaire', 'Avancé'];
   const technologies = ['React', 'Vue', 'Angular', 'Node.js', 'Python'];
