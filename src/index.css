@@ -4,6 +4,7 @@
   --buttonHover: linear-gradient(90deg, rgba(242,237,237,1) 0%, rgba(223,221,221,1) 6%, rgba(180,237,206,1) 100%);
   --textColor: #271033;
   --paragraphColor: grey;
+  --greenBg: linear-gradient(to left, #38ef7d, #11998e);
 }
 body {
   margin: 0;
@@ -12,6 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f8f8f88e;
 }
 
 code {
@@ -25,19 +27,34 @@ h4{
   /* background: #36904a;
   background: linear-gradient(90deg, #36904a 0%, #51a556 35%, #00cc99 100%);  */
   background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   word-wrap: none;
   font-size: 20px !important;
-  transition: ease-in all 0.3s;
+  transition: ease-in all 0.3s !important;
   white-space: nowrap;
 }
 
 .btnFirst:hover{
   letter-spacing: 1px;
-  transition: ease-in all 0.3s;
+  transition: ease-in all 0.3s !important;
   color: #108643; 
   background: rgb(242,237,237);
   background: linear-gradient(90deg, rgba(242,237,237,1) 0%, rgba(223,221,221,1) 6%, rgba(180,237,206,1) 100%);  
+}
+
+.btnLearn{
+    background: white !important;
+    color: #108643 !important; 
+    word-wrap: none;
+    font-size: 20px !important;
+    white-space: nowrap;
+    padding:15px 60px !important;
+    margin: 40px 0 !important;
+    border-radius: 40px !important;
+    transition: ease-in all .3s !important;
+}
+.btnLearn:hover{
+  margin: 35px 0 !important;
+  transition: ease-in all .3s !important;
 }

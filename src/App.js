@@ -6,6 +6,8 @@ import Tutoriel from './pages/tutoriel/Tutoriel'
 import Training from './pages/training/Training';
 import Premium from './pages/premium/Premium';
 import Project from './pages/project/Project';
+import SignIn from './pages/signIn/SignIn';
+import SignUp from './pages/signUp/SignUp';
 
 function App() {
   return (
@@ -13,10 +15,12 @@ function App() {
       <Topbar/>
       <Routes>
         <Route path='/' exact element={<Home/>} />
-        <Route path='/tutoriels' exact element={<Tutoriel/>} /> 
-        <Route path='/formations' exact element={<Training/>} />
-        <Route path='/premium' exact element={<Premium/>} />
-        <Route path='/projets' exact element={<Project/>} />
+        <Route path='/tutoriels'  element={<Tutoriel/>} /> 
+        <Route path='/formations'  element={<Training/>} />
+        <Route path='/premium'  element={<Premium/>} />
+        <Route path='/projets'  element={<Project/>} />
+        <Route path='/signin' element={<SignIn/>}/>
+        <Route path='/signup' element={<SignUp/>} />
       </Routes>
     </Router>
   );

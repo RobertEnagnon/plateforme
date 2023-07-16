@@ -72,7 +72,7 @@ const Topbar = () => {
                       color="inherit"
                   >
                       <Button  className="logo" sx={{fontSize:'25px',color:'white'}} > 
-                        <img src={Logo} alt="logo ronasdev" width={50} height={50} /> Ronasdev
+                        <img src={Logo} alt="logo ronasdev" width={50} height={50} /> The Legend Code
                       </Button>
                   </Link>
                   <Stack className="navbar" direction={'row'} spacing={1}>
@@ -104,10 +104,10 @@ const Topbar = () => {
                             inputProps={{ 'aria-label': 'search' }}
                             />
                     </Search>
-                    <Link to="/"  className='link'>
+                    <Link to="/signup"  className='link'>
                       <Stack direction='row' fontSize={16} sx={{whiteSpace: "noWrap"}} spacing={1}><PersonAddAlt1Icon/><span>S'inscrire</span></Stack>
                     </Link>
-                    <Link to="/" className='link'>
+                    <Link to="/signin" className='link'>
                       <Stack direction='row' fontSize={16} sx={{whiteSpace: "noWrap"}} spacing={1}><LoginIcon/><span>Se connecter</span></Stack>
                     </Link>
                   </Stack>

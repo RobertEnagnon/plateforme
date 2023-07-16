@@ -17,10 +17,12 @@
     color: white;
     font-size: 18px;
     padding: 10px ;
+    transition: all ease-in 0.3s ;
   }
+  
 .navbar .link:hover,.compte .link:hover{
     color: rgb(0, 255, 157);
-    transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s ;
     border-bottom: 1px solid whitesmoke;
     padding-top: 5px;
 }
