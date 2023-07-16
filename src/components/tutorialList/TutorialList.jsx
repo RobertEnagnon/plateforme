@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Grid,Stack,Typography } from '@mui/material';
 import TutorialItem from '../tutorialItem/TutorialItem';
 import SearchBar from '../searchBar/SearchBar';
@@ -13,7 +13,10 @@ const TutorialList = () => {
 
   // Exemple de données de tutoriels
  
-     const data = [
+    
+  useEffect(() => {
+
+    const data = [
       {
         id: 1,
         title: 'Introduction à React',
@@ -96,9 +99,9 @@ const TutorialList = () => {
       },
     ];
 
-  useEffect(() => {
+
     setTutorials([...data]); 
-  },[data])
+  },[])
   
   const levels = ['Débutant', 'Intermédiaire', 'Avancé'];
   const technologies = ['React', 'Vue', 'Angular', 'Node.js', 'Python'];
@@ -117,8 +120,6 @@ const TutorialList = () => {
     if (searchTerm) {
       let tuto = tutorials.filter(tutorial => tutorial.title.includes(searchTerm) || tutorial.category.includes(searchTerm));
       setTutorials([...tuto]);
-    }else{
-      setTutorials([...data]);
     }
   };
 
