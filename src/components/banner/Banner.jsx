@@ -58,7 +58,7 @@ const Banner = () => {
                     <Link to={'/tutoriels'} color="inherit">
                         <TutoButton variant="outlined" 
                             sx={{
-                                padding:{md:"15px 60px"},margin: "20px 0"
+                                padding:{md:"15px 60px"},margin: "20px 0 20px 20px"
                             }}
                         >Voir les tutoriels</TutoButton>
                     </Link>
