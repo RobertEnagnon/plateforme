@@ -12,3 +12,18 @@
     color: #108643 !important;
    
 }
+
+@media all and (max-width: 960px) {
+    .tutorielFeed .title{
+        font-size: 25px;
+    }
+   
+}
+
+
+@media all and (max-width: 678px) {
+   
+    .tutorielFeed .tab{
+        font-size: 12px !important;
+    }
+}

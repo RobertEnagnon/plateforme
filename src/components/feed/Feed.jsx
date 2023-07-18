@@ -20,7 +20,7 @@ const Feed = () => {
                 atteindre vos objectifs professionnels les plus ambitieux.
             </Box>
         </Box>
-        <Stack direction="row" gap="1" className="bottom" sx={{maxWidth:"80%"}}  mt={5}>
+        <Stack direction={{md:"row"}} gap="1" className="bottom" sx={{maxWidth:"80%"}}  mt={5}>
             <Strategy src={TailorMade} title="Une formation pratique taillée sur mesure" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vitae. ici</Strategy>
             <Strategy src={Mentoring} title="Un coaching hebdomadaire personnalisé" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vitae. ici</Strategy>
             <Strategy src={Community} title="Une communauté d'entraide active" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vitae. ici</Strategy>

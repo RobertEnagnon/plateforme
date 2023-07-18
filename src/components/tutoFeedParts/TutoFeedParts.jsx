@@ -8,12 +8,13 @@ const TutoFeedParts = ({description, image, value}) => {
   return (
     <>
         <TabPanel value={`${value}`}>
-            <Stack direction={'row'} gap={2} className='tutoFeedPart'>
+            <Stack direction={{lg:'row', md:'row', sm:'column', xs:'column'}} gap={2} className='tutoFeedPart'>
                 <Box>
                     <span className='description'>{description}</span> <br />
                     <Link to={"/premium"} color="inherit">
-                        <Button variant="contained" className="btnFirst" sx={{
-                                padding:"15px 60px",margin: "20px 0"}} >
+                        <Button variant="contained" className="btnFirst"  sx={{
+                                    padding:{md:"15px 60px"},margin: "20px 0"
+                                }} >
                             Accès Immédiat et Gratuit
                         </Button>
                     </Link >

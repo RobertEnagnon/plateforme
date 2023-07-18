@@ -17,17 +17,17 @@ const TutorielFeed = () => {
 
   return (
     <Box className='tutorielFeed'>
-        <Stack sx={{width:"70%", justifyContent:'center'}} direction={'column'}>
+        <Stack sx={{width:{lg:"70%",md:"80%",sm:"95%", xs:"95%"}, justifyContent:'center'}} direction={'column'}>
             <Typography variant='h4' className='title'>
                 <span>Apprendre grâce à</span>  <br />
-                <span>des tutoriels gratuits de découverte des technos et des pratiques sur ces dernières </span>
+                <span>des vidéos de tutoriels gratuits de découverte des technos et des pratiques sur ces dernières </span>
             </Typography>
             <Box sx={{ width: '100%', typography: 'body1' }} mt={4}>
                 <TabContext value={value}>
-                    <Box sx={{ borderBottom: 1, borderColor: 'divider',textAlign:'center' }}>
+                    <Box sx={{ borderBottom: 1, borderColor: 'divider',textAlign:'center', fontSize:{lg:"12px"} }}>
                         <TabList onChange={handleChange} aria-label="lab API tabs example" sx={{textAlign:'center'}}>
-                            <Tab label="Vidéos de formations gratuits" value="1" />
-                            <Tab label="Vidéos pratiques gratuites" value="2"  />
+                            <Tab className='tab' label="Formations gratuits" value="1" />
+                            <Tab className='tab' label="Vidéos pratiques gratuites" value="2"  />
                         </TabList>
                     </Box>
                     <TutoFeedParts value={1} image={ProgrammingImg} description={`

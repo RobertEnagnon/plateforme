@@ -24,10 +24,10 @@ const Banner = () => {
     
   return (
     <Box
-    className='banner'
+        className='banner'
         sx={{
             width:"100%",
-            height:{md:"78vh"},
+            minHeight:"78vh",
             display:"flex",
             justifyContent:'center',
             alignItems:"center",
@@ -35,9 +35,11 @@ const Banner = () => {
         }}
     >
         
-        <Stack direction={'row'} sx={{display:"flex", justifyContent:"space-between", alignItems:'center', width:"80%", minHeight:{md:'78vh'}}}>
-            <Box maxWidth={'65%'} >
-                <Typography color={"white"} variant="h3">
+        <Stack className="wrapper" direction={{md:'column',lg:'row',}} 
+            sx={{display:"flex",justifyContent:{lg:"space-between",md:"center", sm:'center',xs:'center'},
+             alignItems:{lg:'center',md:'center',sm:'center',xs:'center'},width:{lg:"80%", md:'100%'}, minHeight:'78vh'}}>
+            <Box width={{lg:'65%',md:'80%',sm:'90%',xs:'90%'}} sx={{margin: "auto"}} className="left"  >
+                <Typography color={"white"} variant="h3" className="title">
                     <span className="ronasdev">Ronasdev</span> <br />
                     Nous vous rendons la connaissance buvable 
                 </Typography>
@@ -45,22 +47,27 @@ const Banner = () => {
                     Ouvrez une nouvelle porte vers le future numerique grâce à nos
                     meilleures stratégies d'explications dans nos défferentes formations et notre coaching pratique, taillé sur mesure
                 </p>
-                <Stack direction={'row'} gap={2}>
+                <Stack direction={{md:'row',sm:'column'}} gap={2}>
                     <Link to={"/formations"} color="inherit">
-                        <Button variant="contained" className="btnFirst" sx={{
-                                 padding:"15px 20px"
-                            }} >
+                        <Button variant="contained" className="btnFirst"  sx={{
+                                    padding:{md:"15px 60px"},margin: "20px 0"
+                                }} >
                             Découvrir les formations
                         </Button>
                     </Link >
                     <Link to={'/tutoriels'} color="inherit">
-                        <TutoButton variant="outlined">Voir les tutoriels</TutoButton>
+                        <TutoButton variant="outlined" 
+                            sx={{
+                                padding:{md:"15px 60px"},margin: "20px 0"
+                            }}
+                        >Voir les tutoriels</TutoButton>
                     </Link>
                 </Stack>
             </Box>
-            <div className="right">
+            
+            <Box className="right" sx={{display:{sm:'none', md:'flex'}}}>
         
-            </div>
+            </Box>
         </Stack>
     </Box>
   )

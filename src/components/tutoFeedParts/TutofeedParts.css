@@ -44,3 +44,10 @@ span.MuiTabs-indicator.css-1aquho2-MuiTabs-indicator  {
     font-size: 22px;
     color: var(--paragraphColor);
 }
+@media all and (max-width: 1200px) {
+    
+}
+
+@media all and (max-width: 960px) {
+    
+}

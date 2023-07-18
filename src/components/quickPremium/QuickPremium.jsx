@@ -24,7 +24,7 @@ const QuickPremium = () => {
 
   return (
     <Box  className="quickPremium"  >
-        <Stack sx={{width:"50%", justifyContent:'center'}} direction={'column'}>
+        <Stack sx={{width:{lg:"50%",md:"60%",sm:"90%",xs:"90%"}, justifyContent:'center'}} direction={'column'}>
             <Box>
                 <Typography variant='h4'>Devenir premium</Typography>
                 <p>Devenir premium sur Ronasdev, c'est soutenir la création de nouveaux contenus 
@@ -43,21 +43,21 @@ const QuickPremium = () => {
                 </FormControl>
 
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{justifyContent:'center', fontSize:'20px'}}>
-                    <Grid item xs={6}>
+                    <Grid item lg={6} md={6} sm={6} xs={12}>
                         <Item>Visionner les tutoriels <Typography variant='h5'>En Avance</Typography></Item>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item lg={6} md={6} sm={6} xs={12}>
                         <Item>Voir les vidéos <Typography variant='h5'>premium</Typography></Item>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item lg={6} md={6} sm={6} xs={12}>
                         <Item><Typography variant='h5'>Télécharger</Typography>les vidéos</Item>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item lg={6} md={6} sm={6} xs={12}>
                         <Item><Typography variant='h5'>Télécharger</Typography>les codes sources</Item>
                     </Grid>
                     <Link to={"/premium"} color="inherit">
                             <Button variant="contained" className="btnFirst" sx={{
-                                    padding:"15px 60px",margin: "20px 0"
+                                    padding:{md:"15px 60px"},margin: "20px 0"
                                 }} >
                             Devenir Premium (<span>1 {premiumType}</span>)
                             </Button>

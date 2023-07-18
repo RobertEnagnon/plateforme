@@ -8,7 +8,7 @@ import GoogleStore32 from '../../assets/images/google-play32.png';
 const HomeFooter = () => {
   return (
     <Box className="homeFooter">
-        <Stack direction={'row'} sx={{justifyContent:'center'}}>
+        <Stack direction={{lg:'row',md:'row',sm:'column',xs:'column'}} sx={{justifyContent:'center', alignItems:'center'}}>
             <Box className="left">
                 <Typography variant='h4'>
                     Vouloir démarrer le Codage ?
@@ -27,7 +27,7 @@ const HomeFooter = () => {
                     <Link className='footerLink' to={'#'}>Expérience de formation</Link>
                     <Box className='footerLink' to={'#'}>
                         <Typography variant='h6'>Télécharger gratuitement</Typography>
-                        <Box>
+                        <Box className="storeLinks">
                             <Link className='storeLink' to={'#'} ><img src={GoogleStore32} alt='notre appli sur android'/></Link>
                             <Link className='storeLink' to={'#'} ><img src={AppStore32} alt='notre appli sur ios'/></Link>
                         </Box>
