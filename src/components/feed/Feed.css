@@ -25,6 +25,11 @@
         width: 95%;
         text-align: justify;
     }
+    .feed .top .title{
+
+        font-size: 25px !important;
+        margin-bottom: 10px;
+    }
     .top .paragraph{
         padding: 5px ;
         font-size: 20px;
