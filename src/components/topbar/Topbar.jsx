@@ -15,15 +15,14 @@ import {
   TipsAndUpdates as TipsAndUpdatesIcon
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-import { Divider, IconButton, Menu, MenuItem, Stack, SwipeableDrawer } from '@mui/material';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { Divider, IconButton,  Stack, SwipeableDrawer } from '@mui/material';
 
 import Logo from "../../assets/images/thelegendcode.png";
 
   
   const Topbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
-    const [anchorEl, setAnchorEl] = useState(null);
+    // const [anchorEl, setAnchorEl] = useState(null);
   
     const handleMenuOpen = () => {
       setMenuOpen(true);
@@ -33,13 +32,13 @@ import Logo from "../../assets/images/thelegendcode.png";
       setMenuOpen(false);
     };
 
-    const handleServicesMenuOpen = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
+    // const handleServicesMenuOpen = (event) => {
+    //   setAnchorEl(event.currentTarget);
+    // };
   
-    const handleServicesMenuClose = () => {
-      setAnchorEl(null);
-    };
+    // const handleServicesMenuClose = () => {
+    //   setAnchorEl(null);
+    // };
  
   
     return (
@@ -224,53 +223,5 @@ import Logo from "../../assets/images/thelegendcode.png";
   
 
   export default Topbar;
-
-
-
-
-  // const Search = styled('div')(({ theme }) => ({
-  //   position: 'relative',
-  //   borderRadius: theme.shape.borderRadius,
-  //   backgroundColor: alpha(theme.palette.common.white, 0.15),
-  //   '&:hover': {
-  //     backgroundColor: alpha(theme.palette.common.white, 0.25),
-  //   },
-  //   marginLeft: 0,
-  //   width: '100%',
-  //   [theme.breakpoints.up('sm')]: {
-  //     marginLeft: theme.spacing(1),
-  //     width: 'auto',
-  //     overflow: 'hidden',
-  //   },
-  // }));
   
-  // const SearchIconWrapper = styled('div')(({ theme }) => ({
-  //   padding: theme.spacing(0, 2),
-  //   height: '100%',
-  //   position: 'absolute',
-  //   pointerEvents: 'none',
-  //   display: 'flex',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   overflow: "hidden"
-  // }));
-  
-  // const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  //   color: 'inherit',
-  //   '& .MuiInputBase-input': {
-  //     padding: theme.spacing(1, 1, 1, 0),
-  //     // vertical padding + font size from searchIcon
-  //     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-  //     transition: theme.transitions.create('width'),
-  //     width: '100%',
-  //     [theme.breakpoints.up('sm')]: {
-  //       width: '12ch',
-  //       '&:focus': {
-  //         width: '18ch',
-  //         overflow: "hidden"
-  //       },
-  //     },
-  //   },
-  // }));
-            
             
