@@ -16,7 +16,7 @@ const QuickPremium = () => {
     const [premiumType, setPremiumType] = useState("mois")
 
     const handlePremium = (e)=>{
-        const value = e.target.value === 'month' ? 3: 30;
+        const value = e.target.value === 'month' ? 5: 50;
         const type = e.target.value === 'month' ? "Mois": "An";
         setPremium(value)
         setPremiumType(type);
@@ -27,7 +27,7 @@ const QuickPremium = () => {
         <Stack sx={{width:{lg:"50%",md:"60%",sm:"90%",xs:"90%"}, justifyContent:'center'}} direction={'column'}>
             <Box>
                 <Typography variant='h4'>Devenir premium</Typography>
-                <p>Devenir premium sur Ronasdev, c'est soutenir la création de nouveaux contenus 
+                <p>Devenir premium sur <span style={{color:'#264653'}} >The Legend Code</span>, c'est soutenir la création de nouveaux contenus 
                     chaque semaine, rejoindre nos canaux de partages privés et accéder à du contenu exclusif pour apprendre et 
                     s'améliorer (comme le téléchargement des vidéos et des sources, accès à des contenus exclusifs et aux codes de nos projets).
                 </p>
@@ -44,7 +44,7 @@ const QuickPremium = () => {
 
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{justifyContent:'center', fontSize:'20px'}}>
                     <Grid item lg={6} md={6} sm={6} xs={12}>
-                        <Item>Visionner les tutoriels <Typography variant='h5'>En Avance</Typography></Item>
+                        <Item>Rejoindre la communauté <Typography variant='h5'>Telegram & Discord</Typography></Item>
                     </Grid>
                     <Grid item lg={6} md={6} sm={6} xs={12}>
                         <Item>Voir les vidéos <Typography variant='h5'>premium</Typography></Item>
@@ -56,12 +56,12 @@ const QuickPremium = () => {
                         <Item><Typography variant='h5'>Télécharger</Typography>les codes sources</Item>
                     </Grid>
                     <Link to={"/premium"} color="inherit">
-                            <Button variant="contained" className="btnFirst" sx={{
-                                    padding:{md:"15px 60px"},margin: "20px 0"
-                                }} >
-                            Devenir Premium (<span>1 {premiumType}</span>)
-                            </Button>
-                        </Link >
+                        <Button variant="contained" className="btnFirst" sx={{
+                                padding:{md:"15px 60px"},margin: "20px 0"
+                            }} >
+                        Devenir Premium (<span>1 {premiumType}</span>)
+                        </Button>
+                    </Link >
                 </Grid>
             </Stack>
         </Stack>

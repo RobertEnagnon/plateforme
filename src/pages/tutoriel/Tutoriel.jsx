@@ -5,7 +5,7 @@ import TutorialList from '../../components/tutorialList/TutorialList';
 
 const Tutoriel = () => {
   return (
-    <TutorialList />
+    <TutorialList className="mainBg" />
   )
 }
 

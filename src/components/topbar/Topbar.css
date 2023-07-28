@@ -20,7 +20,7 @@
     transition: all ease-in 0.3s ;
   }
   
-.navbar .link:hover,.compte .link:hover{
+.navbar .link:hover,.compte .link:hover,.navbar .link:focus{
     color: rgb(0, 255, 157);
     transition: all ease-in 0.3s ;
     border-bottom: 1px solid whitesmoke;
@@ -33,6 +33,16 @@
 .humberger{
     display: none !important;
 }
+.sub-services{
+    border-top: 2px solid #264653;
+}
+.sub-services .link:hover{
+    color: rgb(0, 255, 157);
+    transition: all ease-in 0.3s ;
+    border-bottom: 1px solid whitesmoke;
+    padding-top: 5px;
+    width: 100%;
+}
 
 @media all and (max-width:1200px) {
     .navbar{
@@ -44,7 +54,7 @@
         margin: auto;
         padding: auto;
         top: 65px;
-        background: rgba(0,0,0,0.1);
+        background: rgba(0,0,0,0.2);
         margin-left:0 !important;
         padding-left: 0;
         height: 65px;

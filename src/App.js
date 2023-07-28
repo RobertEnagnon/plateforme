@@ -8,6 +8,7 @@ import Premium from './pages/premium/Premium';
 import Project from './pages/project/Project';
 import SignIn from './pages/signIn/SignIn';
 import SignUp from './pages/signUp/SignUp';
+import HomeFooter from './components/homeFooter/HomeFooter';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/signin' element={<SignIn/>}/>
         <Route path='/signup' element={<SignUp/>} />
       </Routes>
+      <HomeFooter/>
     </Router>
   );
 }

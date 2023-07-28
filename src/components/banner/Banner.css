@@ -10,13 +10,13 @@
 }
 .principal{
     word-wrap: break-word;
-    color: rgb(253, 243, 243);
-    font-size: 20px;
+    color: rgba(223, 14, 101, 0.61);
+    font-size: 24px;
 }
 
 
 .banner .right{
-    background-image: url("../../assets//images/banner.png") ;
+    background-image: url("../../assets/images/banner.png") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

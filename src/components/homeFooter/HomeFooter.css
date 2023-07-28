@@ -3,6 +3,7 @@
     background: var(--greenBg);
     color: rgb(253, 243, 243);
     font-size: 16px;
+    margin-top: 20px;
 }
 .homeFooter h4{
     color: white !important;

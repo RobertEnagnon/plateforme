@@ -1,0 +1,13 @@
+.banniere{
+    color: #ecf8f8;
+    background: #11998e;  /* fallback for old browsers */
+    background: var(--greenBg);
+    text-align: left;
+}
+
+.section{
+    color: #6d6875;
+}
+.section h5{
+    color: black;
+}

@@ -21,9 +21,18 @@ const Feed = () => {
             </Box>
         </Box>
         <Stack direction={{md:"row"}} gap="1" className="bottom" sx={{maxWidth:"80%"}}  mt={5}>
-            <Strategy src={TailorMade} title="Une formation pratique taillée sur mesure" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vitae. ici</Strategy>
-            <Strategy src={Mentoring} title="Un coaching hebdomadaire personnalisé" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vitae. ici</Strategy>
-            <Strategy src={Community} title="Une communauté d'entraide active" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vitae. ici</Strategy>
+            <Strategy src={TailorMade} title="Une formation pratique taillée sur mesure" >
+                Plongez dans un monde d'apprentissage enrichissant, où chaque leçon est conçue 
+                pour vous propulser vers l'excellence.Votre succès commence ici
+            </Strategy>
+            <Strategy src={Mentoring} title="Un coaching hebdomadaire personnalisé" >
+                Découvrez l'exclusivité d'un accompagnement hebdomadaire personnalisé pour atteindre 
+                vos objectifs les plus ambitieux. Rejoignez-nous dès aujourd'hui !
+            </Strategy>
+            <Strategy src={Community} title="Une communauté d'entraide active" >
+                Rejoignez notre communauté d'entraide dynamique et bienveillante, où l'apprentissage 
+                et le partage sont au cœur de chaque interaction.
+            </Strategy>
         </Stack>
     </Stack>
   )

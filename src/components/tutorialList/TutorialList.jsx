@@ -121,19 +121,21 @@ const TutorialList = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, p: 2 }} className="tutorialList mainBg">
-      <Box display={'flex'} alignItems={'start'} mt={4} mb={5} sx={{ borderBottom: 1, borderColor: 'divider' }}>
-      <TutorialFilter levels={levels} technologies={technologies} onFilter={handleFilter} />
-        <Box mb={5} ml={'auto'}>
+    <Box sx={{ flexGrow: 1}} className="tutorialList mainBg">
+      <Box className="banniere" display={'flex'} 
+        alignItems={'start'} justifyContent={'flex-start'} flexWrap={'wrap'}
+         p={10} mb={5} sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <TutorialFilter levels={levels} technologies={technologies} onFilter={handleFilter} />
+        <Box mb={5} ml={{md:'auto'}}>
           <SearchBar onSearch={handleSearch} />
         </Box>
       </Box>
-      <Grid container spacing={2} px={4} justifyContent={'end'} >
+      <Grid container spacing={2} px={{md:4}} justifyContent={'end'} >
         <Stack ml={2} width={{ xs: "100%", sm:"100%" , md:"60%" , lg: "45%"}} >
           <Typography variant="h4" gutterBottom>
             Liste des Tutoriels
           </Typography>
-          <Box pr={10} pb={5} className="p">
+          <Box pr={{md:10}} pb={5} className="p">
             Envie d'apprendre de nouvelles choses et maitriser de nouvelles technologies ?
             Une explication pédagogique avec une vitesse de votre compréhension et une méthode 
             appréciée par une comunauté très habile. Alors vous et nous avons de chemin à faire ensemble...

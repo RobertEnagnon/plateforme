@@ -28,8 +28,8 @@ const TutorialFilter = ({ levels, technologies, onFilter }) => {
   };
 
   return (
-    <FilterContainer>
-      <FormControl>
+    <FilterContainer sx={{ display: 'flex', flexWrap: 'wrap'}}>
+      <FormControl sx={{mb:2}} >
         <InputLabel>Niveau</InputLabel>
         <FilterSelect
           value={selectedLevel}
@@ -41,7 +41,7 @@ const TutorialFilter = ({ levels, technologies, onFilter }) => {
           ))}
         </FilterSelect>
       </FormControl>
-      <FormControl>
+      <FormControl sx={{mb:2}}>
         <InputLabel>Technologie</InputLabel>
         <FilterSelect
           value={selectedTechnology}

@@ -5,19 +5,19 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" to="https://mui.com/">
         The legend Code
       </Link>{' '}
       {new Date().getFullYear()}
@@ -111,12 +111,12 @@ export default function SignIn() {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
+                  <Link to="#" style={{color:'#01adf7', textDecoration: 'underline'}} >
                     Mot de passe oublié?
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link to="/signup" variant="body2">
+                  <Link to="/signup" style={{color:'#01adf7', textDecoration: 'underline'}}>
                     {"Vous n'avez pas de compte? S'inscrire"}
                   </Link>
                 </Grid>
