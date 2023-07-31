@@ -7,6 +7,8 @@
 
 .section{
     color: #6d6875;
+
+    text-align: justify !important;
 }
 .section h5{
     color: black;

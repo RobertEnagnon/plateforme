@@ -40,8 +40,14 @@ const Premium = () => {
           {/* Devenir premium sur The Legend Code, c'est soutenir la création de nouveaux contenus chaque semaine et accéder à du contenu exclusif pour apprendre et s'améliorer (comme le téléchargement des vidéos et des sources). */}
           Devenir Premium sur The Legend Code offre une expérience 
           enrichissante et exclusive. En plus de soutenir la création 
-          de nouveaux contenus chaque semaine, les membres Premium bénéficient d'un accès privilégié à des contenus exclusifs tels que des vidéos téléchargeables et des sources de projets. Rejoignez notre communauté sur Telegram et discutez directement avec les formateurs en inbox. Partagez vos questions avec d'autres membres et trouvez des réponses, tout en profitant d'avantages spéciaux comme des réductions sur les formations premium et un accès prioritaire au support technique. Plongez dans un voyage d'apprentissage avancé 
-          et épanouissant en devenant membre Premium de The Legend Code.
+          de nouveaux contenus chaque semaine, les membres Premium bénéficient d'un accès 
+          privilégié à des contenus exclusifs tels que des vidéos téléchargeables et des 
+          sources de projets. Rejoignez notre communauté sur Telegram et discutez directement 
+          avec les formateurs en inbox. Partagez vos questions avec d'autres membres et trouvez 
+          des réponses, tout en profitant d'avantages spéciaux comme des réductions sur les 
+          formations premium et un accès prioritaire au support technique. 
+          {/* Plongez dans un voyage d'apprentissage avancé 
+          et épanouissant en devenant membre Premium de The Legend Code. */}
         </Typography>
       </Box>
 
@@ -109,11 +115,11 @@ const Premium = () => {
         </Box>
 
         {/* Section explicative */}
-        <Box pt={{md:13,sm:5}} display="flex" justifyContent="center" className="section" >
+        <Box pt={{md:13,sm:5}}  display="flex" justifyContent="center" className="section" >
           <Box
             sx={{
               maxWidth: '600px',
-              width: '100%',
+              width: '90%',
             }}
           >
             <Typography variant="h5" gutterBottom>

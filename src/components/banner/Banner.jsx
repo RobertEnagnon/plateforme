@@ -16,6 +16,11 @@ const TutoButton = styled(Button)({
         color:"#f9f9f9",
         letterSpacing: "1px",
         transition:"ease-in all 0.3s"
+    },
+    '@media all and (max-width:960px)':{
+        fontSize: '16px',
+        padding: '10px 20px ',
+        marginTop:'0px'
     }
 })
 
@@ -44,8 +49,7 @@ const Banner = () => {
                     Une source inépuisable de savoir à déguster sans modération
                 </Typography>
                 <p className="principal">
-                "Découvrez la voie vers un avenir numérique prometteur 
-                grâce à nos stratégies d'explication de pointe dans nos formations variées et
+                "Découvrez la voie vers un avenir numérique prometteur grâce à nos stratégies d'explication de pointe dans nos formations variées et
                  notre coaching pratique, taillé sur mesure pour votre réussite."
                 </p>
                 <Stack direction={{md:'row',sm:'column'}} gap={2}>

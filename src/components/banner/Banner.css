@@ -10,7 +10,7 @@
 }
 .principal{
     word-wrap: break-word;
-    color: rgba(245, 5, 105, 0.61);
+    color: rgba(255, 255, 255, 0.856);
     font-size: 24px;
     
 }
@@ -53,6 +53,13 @@
     }
     .banner .wrapper .title{
         font-size: 30px !important;
+    }
+
+    .btnFirst{
+        font-size: 16px !important;
+        padding: 10px 20px !important;
+        margin-top:0px !important;
+        margin-bottom: 10px !important;
     }
     
 }
