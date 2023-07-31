@@ -1,10 +1,12 @@
 import React from 'react'
 import { Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 function TutorialItem({tutorial}) {
   return (
-    <Grid item xs={12} sm={6} md={4} lg={3} key={tutorial.id}>
+    <Grid item xs={12} sm={6} md={4} lg={3} key={tutorial.id} >
+        <Link to={`/tutoriels/show/${tutorial.id}`}>
             <Card>
               <CardMedia
                 component="img"
@@ -17,7 +19,8 @@ function TutorialItem({tutorial}) {
                   {tutorial.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Catégorie : {tutorial.category}
+                  {/* Catégorie : */}
+                   {tutorial.category}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Niveau : {tutorial.level}
@@ -27,7 +30,8 @@ function TutorialItem({tutorial}) {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
+        </Link>
+    </Grid>
   )
 }
 

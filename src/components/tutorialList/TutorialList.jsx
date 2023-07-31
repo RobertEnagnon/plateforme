@@ -130,12 +130,12 @@ const TutorialList = () => {
           <SearchBar onSearch={handleSearch} />
         </Box>
       </Box>
-      <Grid container spacing={2} px={{md:4}} justifyContent={'end'} >
-        <Stack ml={2} width={{ xs: "100%", sm:"100%" , md:"60%" , lg: "45%"}} >
+      <Grid container spacing={2} px={{xs:4}} justifyContent={'end'} >
+        <Stack ml={2} mr={'auto'} width={{ xs: "100%", sm:"100%" , md:"60%" , lg: "45%"}} >
           <Typography variant="h4" gutterBottom>
             Liste des Tutoriels
           </Typography>
-          <Box pr={{md:10}} pb={5} className="p">
+          <Box pr={{md:10}}  pb={5} className="p">
             Envie d'apprendre de nouvelles choses et maitriser de nouvelles technologies ?
             Une explication pédagogique avec une vitesse de votre compréhension et une méthode 
             appréciée par une comunauté très habile. Alors vous et nous avons de chemin à faire ensemble...

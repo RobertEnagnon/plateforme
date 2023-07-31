@@ -10,7 +10,7 @@ const SearchContainer = styled('div')({
 
 const SearchInput = styled(TextField)({
   marginLeft: '8px',
-  width: '300px',
+  width: '200px',
 });
 
 const SearchButton = styled(IconButton)({

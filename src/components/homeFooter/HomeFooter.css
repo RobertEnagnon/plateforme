@@ -1,5 +1,6 @@
 .homeFooter{
     width: 100%;
+    overflow-x: hidden;
     background: var(--greenBg);
     color: rgb(253, 243, 243);
     font-size: 16px;
