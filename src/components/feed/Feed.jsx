@@ -8,7 +8,7 @@ import Community  from '../../assets/images/Community_re.png';
 
 const Feed = () => {
   return (
-    <Stack direction={'column'} gap={'2'} className="feed">
+    <Stack direction={'column'} gap={1} className="feed">
         <Box className="top">
             <Typography className="title" variant="h4" sx={{textAlign:"center"}}>
                 <span>Devenir programmeur grâce à</span>  <br />
@@ -20,7 +20,7 @@ const Feed = () => {
                 atteindre vos objectifs professionnels les plus ambitieux.
             </Box>
         </Box>
-        <Stack direction={{md:"row"}} gap="1" className="bottom" sx={{maxWidth:"80%"}}  mt={5}>
+        <Stack direction={{md:"row"}} gap={1} className="bottom" sx={{maxWidth:"80%"}}  mt={5}>
             <Strategy src={TailorMade} title="Une formation pratique taillée sur mesure" >
                 Plongez dans un monde d'apprentissage enrichissant, où chaque leçon est conçue 
                 pour vous propulser vers l'excellence.Votre succès commence ici

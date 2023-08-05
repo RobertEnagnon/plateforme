@@ -12,7 +12,7 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 
 const QuickPremium = () => {
-    const [premium, setPremium] = useState(3)
+    const [premium, setPremium] = useState(5)
     const [premiumType, setPremiumType] = useState("mois")
 
     const handlePremium = (e)=>{
@@ -55,7 +55,7 @@ const QuickPremium = () => {
                     <Grid item lg={6} md={6} sm={6} xs={12}>
                         <Item><Typography variant='h5'>Télécharger</Typography>les codes sources</Item>
                     </Grid>
-                    <Link to={"/premium"} color="inherit">
+                    <Link to={"/premium"} color="inherit" style={{marginTop:5}}>
                         <Button variant="contained" className="btnFirst" sx={{
                                 padding:{md:"15px 60px"},margin: "20px 0"
                             }} >
