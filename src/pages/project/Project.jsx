@@ -84,7 +84,7 @@ const Project = () => {
   });
 
   return (
-    <Box>
+    <Box className="mainBg">
       {/* Bannière */}
       <Box
         sx={{
@@ -132,7 +132,7 @@ const Project = () => {
         <Grid container spacing={3}>
           {filteredProjects.map((project) => (
             <Grid item key={project.id} xs={12} sm={6} md={4}>
-              <Box sx={{ p: 2, border: '1px solid #e0e0e0', borderRadius: 4, boxShadow: '0 0 1px black '}}>
+              <Box bgcolor={'#fff'} sx={{ p: 2, border: '1px solid #e0e0e0', borderRadius: 4, boxShadow: '0 0 1px black '}}>
                 <img src={project.imageUrl} alt={project.title} style={{ width: '100%', height: 200, objectFit: 'cover' }} />
                 <Typography variant="h6" gutterBottom mt={2}>
                   {project.title}

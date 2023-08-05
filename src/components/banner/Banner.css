@@ -7,12 +7,16 @@
 
 .ronasdev{
     color: rgb(0, 255, 157);
+    font-family: 'Rubik', sans-serif !important;
 }
 .principal{
     word-wrap: break-word;
     color: rgba(255, 255, 255, 0.856);
     font-size: 24px;
     
+}
+.title{
+    font-family: 'Abel', sans-serif !important;
 }
 
 

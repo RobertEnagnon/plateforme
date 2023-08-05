@@ -36,11 +36,11 @@ const TutorialShow = () => {
     <Grid container justifyContent="space-between" alignItems="center" mt={2}>
 
       {/* Niveau du tutoriel */}
-      <Button variant="contained" color="secondary">
+      <Button variant="text" color="warning" disableElevation>
          {tutorial.level}
       </Button>
       {/* Lien de téléchargement */}
-      <Button variant="outlined" href={tutorial.downloadLink} startIcon={<GetAppIcon />} download target="_blank">
+      <Button variant="outlined" href={tutorial.downloadLink} startIcon={<GetAppIcon />} color="success" download  target="_blank">
         Télécharger
       </Button>
     </Grid>

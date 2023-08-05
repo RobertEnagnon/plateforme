@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
 } */
+.logo{
+    font-family: 'Rubik', sans-serif !important;
+}
 .logo img{
     border-radius: 50%;
     margin-right: 5px;

@@ -43,7 +43,7 @@ export default function SignUp() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs" className='mainBg'>
+      <Container component="main" maxWidth="xs" sx={{background:'#fff', mb:5, pb:2, borderRadius:5}}>
         <CssBaseline />
         <Box
           sx={{
@@ -139,7 +139,7 @@ export default function SignUp() {
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 5 }} />
+        <Copyright sx={{ mt: 4 }} />
       </Container>
     </ThemeProvider>
   );
